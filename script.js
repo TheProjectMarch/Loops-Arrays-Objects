@@ -1,5 +1,5 @@
 //course work
-function randomNumber(upper) {
+function getRandomNumber(upper) {
     return Math.floor( Math.random() * upper ) + 1;
 }
 
@@ -11,15 +11,17 @@ while (counter < 100) {
     counter++;
 } */
 
-//IF LOOP STUFF
-var randNum = randomNumber(23000);
-var guessCounter = 0
-while (randNum !== randNum2){
-    var randNum2 = randomNumber(23000);
-    guessCounter++
+var upper = 23000;
+var randomNumber = getRandomNumber(upper);
+var guess;
+var attempts = 0;
+
+while (guess !== randomNumber){
+    guess = getRandomNumber(upper);
+    attempts++;
 }
-document.write("<p>The Random Number was: ",randNum,"</p>")
-document.write("<p>It took the computer ",guessCounter," attempts to get it right</p>")
+document.write("<p>The Random Number was: ",randomNumber,"</p>")
+document.write("<p>It took the computer ",attempts," attempts to get it right.</p>")
 
 // muh tinkerin'. 
 /* var user = "Doug";
