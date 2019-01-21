@@ -1,4 +1,9 @@
-var user = "Doug";
+//course work
+
+
+
+// muh tinkerin'. 
+/* var user = "Doug";
 var counter = 0;
 alert("Hello, world!");
 
@@ -16,4 +21,4 @@ while (counter < 4){
 console.log("The counter is now at",counter,"so we're done!");
 
 alert("Goodbye!");
-
+ */
