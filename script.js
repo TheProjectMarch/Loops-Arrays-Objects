@@ -28,15 +28,11 @@ document.write("<p>It took the computer ",attempts," attempts to get it right.</
 var randomNumber = getRandomNumber(10);
 var userGuess;
 var counter = 0;
-var correctGuess = false;
 
 do {
-    userGuess = prompt("Please guess a number between 1 and 10");
+    userGuess = parseInt(prompt("Please guess a number between 1 and 10"));
     counter++    
-    if (parseInt(userGuess) === randomNumber){
-        correctGuess = true;
-    }
-} while (! correctGuess );
+} while (userGuess !== randomNumber);
 
 document.write("<h1>You guessed the number!</h1></br><p>It took you ",counter," tries to guess the number ",randomNumber);
 
