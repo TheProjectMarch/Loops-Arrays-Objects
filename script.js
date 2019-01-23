@@ -11,7 +11,8 @@ while (counter < 100) {
     counter++;
 } */
 
-var upper = 23000;
+//WHILE LOOP STUFF PART 2
+/* var upper = 23000;
 var randomNumber = getRandomNumber(upper);
 var guess;
 var attempts = 0;
@@ -21,7 +22,23 @@ while (guess !== randomNumber){
     attempts++;
 }
 document.write("<p>The Random Number was: ",randomNumber,"</p>")
-document.write("<p>It took the computer ",attempts," attempts to get it right.</p>")
+document.write("<p>It took the computer ",attempts," attempts to get it right.</p>") */
+
+//DO WOP STUFF LOLOLOL
+var randomNumber = getRandomNumber(10);
+var userGuess;
+var counter = 0;
+var correctGuess = false;
+
+do {
+    userGuess = prompt("Please guess a number between 1 and 10");
+    counter++    
+    if (parseInt(userGuess) === randomNumber){
+        correctGuess = true;
+    }
+} while (! correctGuess );
+
+document.write("<h1>You guessed the number!</h1></br><p>It took you ",counter," tries to guess the number ",randomNumber);
 
 // muh tinkerin'. 
 /* var user = "Doug";
