@@ -40,11 +40,19 @@ document.write("<p>It took the computer ",attempts," attempts to get it right.</
 
 
 //FOR LOOPS
-for (var i = 0; i <= 6; i++){
+/* for (var i = 0; i <= 6; i++){
     console.log('i is equal to ' + i);
 } 
 
-console.log('aaaand we\'re done since i is now ' + i);
+console.log('aaaand we\'re done since i is now ' + i); */
+
+
+var html = '';
+
+for (var i = 1; i <= 100; i++){
+    html += `<div> ${i} </div>`;
+}
+document.write(html);
 
 // muh tinkerin'. 
 /* var user = "Doug";
