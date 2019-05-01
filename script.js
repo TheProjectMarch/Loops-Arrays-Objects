@@ -3,6 +3,8 @@ function getRandomNumber(upper) {
     return Math.floor( Math.random() * upper ) + 1;
 }
 
+
+
 //WHILE LOOP STUFF
 /* var counter = 0;
 while (counter < 100) {
@@ -38,7 +40,11 @@ document.write("<p>It took the computer ",attempts," attempts to get it right.</
 
 
 //FOR LOOPS
+for (var i = 0; i <= 6; i++){
+    console.log('i is equal to ' + i);
+} 
 
+console.log('aaaand we\'re done since i is now ' + i);
 
 // muh tinkerin'. 
 /* var user = "Doug";
