@@ -100,3 +100,40 @@ console.log(groceries[groceries.length]);
 groceries.push('butter');
 console.log(groceries); */
 
+
+function printList(list){
+    var listHTML = '<ol>';
+    for (var i = 0;i < list.length; i+= 1){
+        listHTML += '<li>' + list[i] + '</li>';
+    }
+    listHTML += '</ol>';
+    print(listHTML);
+}
+
+function print(html) {
+    document.write(html);
+} 
+
+
+var playList = [];
+var cereals = [];
+var cerealCounter = 1;
+playList.push('I Did It My Way', 'Mouth for War', 'The Wooden Song', 'Counterfeit', 'Strange Fruit');
+
+printList(playList);
+
+playList.unshift('Lunchbox');
+
+printList(playList);
+
+
+while (cerealCounter < 5){
+    cereals.push(prompt('What cereals do you like?'));
+    cerealCounter++;
+}
+
+cereals.forEach((v, i, a) => {console.log(v, i,);});
+
+printList(cereals);
+
+console.log('The length of the cereals array is', cereals.length);
