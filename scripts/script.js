@@ -1,7 +1,7 @@
 //course work
-function getRandomNumber(upper) {
+/* function getRandomNumber(upper) {
     return Math.floor( Math.random() * upper ) + 1;
-}
+} */
 
 
 
@@ -26,7 +26,7 @@ while (guess !== randomNumber){
 document.write("<p>The Random Number was: ",randomNumber,"</p>")
 document.write("<p>It took the computer ",attempts," attempts to get it right.</p>") */
 
-// //DO WOP STUFF LOLOLOL
+// DO WOP STUFF LOLOLOL
 // var randomNumber = getRandomNumber(10);
 // var userGuess;
 // var counter = 0;
@@ -47,12 +47,12 @@ document.write("<p>It took the computer ",attempts," attempts to get it right.</
 console.log('aaaand we\'re done since i is now ' + i); */
 
 
-var html = '';
+/* var html = '';
 
 for (var i = 1; i <= 100; i++){
     html += `<div> ${i} </div>`;
 }
-document.write(html);
+document.write(html); */
 
 // muh tinkerin'. 
 /* var user = "Doug";
@@ -74,3 +74,29 @@ console.log("The counter is now at",counter,"so we're done!");
 
 alert("Goodbye!");
  */
+
+//+++++++++++++++++++++++++++++++++++++++
+ //ARRAYS
+ //++++++++++++++++++++++++++++++++++++++
+
+/* var groceries = [
+    'milk',
+    'eggs',
+    'bread'
+];
+
+console.log(groceries[1]);
+
+groceries.forEach((element, i,a) => {
+    console.log(element,a);
+});
+
+console.log('sssssss');
+
+console.log(groceries);
+
+console.log(groceries[groceries.length]);
+
+groceries.push('butter');
+console.log(groceries); */
+
