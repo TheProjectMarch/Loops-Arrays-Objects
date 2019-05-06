@@ -258,20 +258,24 @@ var question = 0;
 allCereals = sugarCereals.concat(healthyCereals);
 //console.log("Fruity Pebbles was found at Index", sugarCereals.indexOf('Fruity Pebbles'));
 
+console.log(sugarCereals[0].localeCompare('trix', "base"))
 
 while(question < 2){
+
+
+
+    break
     question++
     userAnswer = allCereals.indexOf(prompt("What cereal do you like?"))
 
-    console.log(userAnswer);
+    //console.log(userAnswer, allCereals[userAnswer]);
+    answerIsTrue = userAnswer + 1;
     
-
-   /*  if (!userAnswer){
+      if (!answerIsTrue){
         alert(`Hmm, not a fan of that. What else do you like?`);
     } else {
         alert(`Awesome! I love ${allCereals[userAnswer]}. What else do you like?`);
     }
- */
 }
 
 
